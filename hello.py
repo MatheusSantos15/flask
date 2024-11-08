@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import os
 from flask import Flask, render_template, session, redirect, url_for
 from flask_bootstrap import Bootstrap
@@ -79,7 +78,7 @@ def index():
         return redirect(url_for('index'))
     return render_template('index.html', form=form, name=session.get('name'),
                            known=session.get('known', False))
-=======
+    
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, SelectField
 from wtforms.validators import DataRequired
@@ -143,4 +142,3 @@ def index():
 if __name__ == '__main__':
     app.run(debug=True)
 
->>>>>>> 290e9710da761351f0b629265fa5f203e45522db
